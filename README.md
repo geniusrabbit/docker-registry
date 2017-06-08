@@ -1,6 +1,6 @@
 # Docker service observer
 
-Docker registry image for https://github.com/geniusrabbit/registry
+Docker service observer image for https://github.com/geniusrabbit/registry
 
     @license Apache-2.0
 
