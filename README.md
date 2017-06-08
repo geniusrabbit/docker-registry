@@ -30,5 +30,8 @@ EXPOSE {port}, ...
 Have to run on each server with your docker services.
 
 ```sh
-docker run -d -e 'REGISTRY_DNS=http://consul:8500/dev?refresh_interval=5' geniusrabbit/service-observer
+docker run -d \
+    -e 'REGISTRY_DNS=http://consul:8500/dev?refresh_interval=5' \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    geniusrabbit/service-observer
 ```
