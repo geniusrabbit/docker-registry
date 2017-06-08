@@ -1,4 +1,4 @@
-# Docker Registry
+# Docker service observer
 
 Docker registry image for https://github.com/geniusrabbit/registry
 
@@ -7,7 +7,7 @@ Docker registry image for https://github.com/geniusrabbit/registry
 ## Environment
 
 ```sh
-REGISTRY_DNS=http://registry:8500/dc1?refresh_interval=5
+REGISTRY_DNS=http://consul:8500/dc1?refresh_interval=5
 ```
 
 ## Example of your service Dockerfile
@@ -30,5 +30,5 @@ EXPOSE {port}, ...
 Have to run on each server with your docker services.
 
 ```sh
-docker run -d -e 'REGISTRY_DNS=http://consul:8500/dev?refresh_interval=5' geniusrabbit/registry
+docker run -d -e 'REGISTRY_DNS=http://consul:8500/dev?refresh_interval=5' geniusrabbit/service-observer
 ```
