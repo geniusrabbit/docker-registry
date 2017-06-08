@@ -25,7 +25,7 @@ ENV CHECK_TIMEOUT=2s
 EXPOSE {port}, ...
 ```
 
-### Run regestry
+### Run registry
 
 Have to be runs on each server with your docker services.
 
