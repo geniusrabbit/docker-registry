@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM alpine:latest
 MAINTAINER GeniusRabbitCo (Dmitry Ponomarev <demdxx@gmail.com>)
 
 COPY /observer /
